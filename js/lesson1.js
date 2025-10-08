@@ -410,3 +410,78 @@
 // };
 
 // const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+// Отримуйте від користувача число (кількість хвилин) через prompt
+// і виводьте у консоль рядок у форматі годин та хвилин.
+// Приклад: користувач вводить в prompt '70' -> в консолі відобразиться '01:10'.
+// Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'):
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
+// const minutes = prompt("Введіть кількість хвилин");
+
+// const hours = String(Math.floor(minutes / 60)).padStart(2, "0");
+
+// Отримати число хвилин від користувача через prompt.
+
+// Знайти години (Math.floor(minutes / 60)).
+
+// Знайти залишок хвилин (minutes % 60).
+
+// Перетворити години і хвилини у рядки і додати нулі попереду через padStart(2, "0").
+
+// Об’єднати години і хвилини у форматі "години:хвилини".
+
+// Вивести результат у консоль.
+
+// const minutes = prompt("Введіть кількість хвилин");
+// const restMinutes = minutes % 60;
+// const hours = String(Math.floor(minutes / 60)).padStart(2, "0");
+
+// const formattedTime = `${hours}:${String(restMinutes).padStart(2, "0")}`;
+// console.log(formattedTime);
+
+// Використайте цикл while, щоб вивести в console всі числа від 0 до 20 включно.
+// let i = 0;
+// while (i <= 20) {
+//   console.log(i);
+//   i += 1;
+// }
+
+// Напишіть функцію getNumbers(min, max), що приймає 2 параметри -
+// мінімальне і максимальне число відповідно.
+// Напишіть цикл всередині функції, який виводить у консоль
+// всі числа від max до min за спаданням.
+// Окрім цього, підрахуйте суму всіх парних чисел в цьому циклі
+// і поверніть її з функції.
+// function getNumbers(min, max) {
+//   let total = 0;
+//   for (let i = max; i >= min; i -= 1) {
+//     console.log(i);
+//     if (i % 2 === 0) {
+//       total += i;
+//     }
+//   }
+//   return total;
+// }
+// getNumbers(0, 20);
+// console.log(getNumbers(0, 20));
+
+// Напишіть функцію min(a, b), яка приймає 2 числа і повертає меньше з них.
+// Потрібно додати перевірку, що функція отримує саме числа, в іншому випадку
+// // повертати з функції рядок - 'Not a number!'.
+// function min(a, b) {
+//   if (typeof a !== "number" || typeof b !== "number") {
+//     return "Not a number!";
+//   }
+//   return Math.min(a, b);
+// }
+
+// Напишіть функцію isAdult(age), яка  приймає число - вік користувача і повертає true,
+// якщо параметр age більше чи дорівнює 18.
+// В іншому випадку вона запитує підтвердження через confirm
+// і повертає його результат (true/false).
+// function isAdult(age) {
+//   if (age >= 18) {
+//     return true;
+//   }
+//   return confirm("Підтвердіть, будь ласка, що вам вже 18 років.");
+// }
