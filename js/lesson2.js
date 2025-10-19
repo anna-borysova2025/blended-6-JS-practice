@@ -327,3 +327,24 @@
 // // const getUsersWithEyeColor = (users, color) => {
 // //   return users.filter(user => user.eyeColor === color);
 // // }
+
+// function greet(name) {
+//   console.log(`Hello, ${name}! I am ${this.person}`);
+// }
+
+// const person = "John";
+// const context = {
+//   person: "Alice",
+// };
+
+// // greet.call(context, "Bob");
+// const library = {
+//   books: 1923,
+//   logBookCount() {
+//     console.log(this.books);
+//   },
+// };
+
+// const showBooks = library.logBookCount.bind({ books: 724 });
+
+// showBooks();
